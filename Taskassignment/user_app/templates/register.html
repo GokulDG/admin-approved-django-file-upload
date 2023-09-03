@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="backgroundlayout">
+        <div class="leftside">
+
+        </div>
+        <div class="rightside">
+            <div>
+                {% for message in messages %}
+                    <div style="font-weight: bold;">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="center-box">
+                <div class="register-text">REGISTER</div>
+                <div class="registercontainer">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <div class="first-name-background">
+                            <div  class="person-1">
+                                <img  class="person" src="static/images/Vector.svg"  alt="person">
+                            </div>
+                            <input type="text" class="first-name" name="fname" placeholder="First Name">
+                        </div>
+                        <div class="last-name-background">
+                            <div  class="person-1">
+                                <img class="person" src="static/images/Vector.svg"  alt="person">
+                            </div>
+                            <input type="text" class="last-name" name="lname" placeholder="Last Name">
+                        </div>
+                        <div class="username-background">
+                            <div  class="person-1">
+                                <img class="person" src="static/images/Vector.svg"  alt="person">
+                            </div>
+                            <input type="text" class="username" name="username" placeholder="User Name">
+                        </div>
+                        <div class="email-background">
+                            <div  class="person-1">
+                                <img class="person" src="static/images/mail.svg"  alt="person">
+                            </div>
+                            <input type="email" class="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="password-background">
+                            <div  class="person-1">
+                                <img class="person" src="static/images/Vector1.svg"  alt="person">
+                            </div>
+                            <input type="password" class="password" name="password" placeholder="Enter your password">
+                        </div>
+                        <div class="password2-background">
+                            <div  class="person-1">
+                                <img class="person" src="static/images/Vector1.svg"  alt="person">
+                            </div>
+                            <input type="password" class="password2" name="password2" placeholder="confirm Password">
+                        </div>
+                        <button type="submit" class="submit-button">Register</button>
+                        <div>
+                            <p class="bottom-content">I have an account ! <a href="/login">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="superManImgDiv"><img class="superManImg" src="/static/images/superman1.svg" alt="super-image"> </img></div>
+    </div>
+</body>
+</html>
+

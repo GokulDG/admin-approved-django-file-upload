@@ -1,0 +1,72 @@
+body {
+  background-color: #006098;
+}
+body .login-text {
+  display: flex;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT";
+  line-height: 61px;
+  letter-spacing: 0.13em;
+  font-weight: 400;
+  font-size: 2vw; /*32px*/
+  color: white;
+}
+body h2 {
+  font-family: "Gill Sans", "Gill Sans MT";
+  color: wheat;
+  font-size: 1.5vw;
+}
+body tr th {
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.8%;
+}
+body td {
+  color: #ffffff;
+  padding: 0.8%;
+}
+body table td:nth-child(2) {
+  color: #ffffff;
+  font-weight: none;
+}
+body form table td:nth-child(3), body td:nth-child(4) {
+  background-color: #006098;
+  padding: 0px 0px 0px 1.5%;
+}
+body table {
+  width: 100%;
+  padding: 1.5%;
+  font-size: 1.1vw;
+}
+body a {
+  text-decoration: none;
+}
+body button {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.13em;
+  font-size: 1vw;
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  background-image: linear-gradient(45deg, #006098, #2380ED);
+  box-shadow: 0px 4px 22px rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  border: none;
+}
+body tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.377);
+}
+body tr:hover {
+  background-color: rgba(141, 180, 221, 0.1725490196);
+}
+body form tr th {
+  color: white;
+}
+body p {
+  color: white;
+  font-size: 1.3vw;
+}/*# sourceMappingURL=approvals.css.map */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/logins.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="backgroundlayout">
+        <div class="leftside">
+
+        </div>
+        <div class="rightside">
+            <div>
+                {% for message in messages %}
+                    <div style="font-weight: bold;">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="center-box">
+                <div class="login-text">LOGIN</div>
+                <div class="logincontainer">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="username-background">
+                            <div  class="person-1">
+                                <img class="person" src="../static/images/Vector.svg"  alt="person">
+                            </div>
+                            <input type="text" class="username" name="username" placeholder="User Name">
+                        </div>
+                        <div class="password-background">
+                            <div  class="person-1">
+                                <img class="person" src="../static/images/Vector1.svg"  alt="person">
+                            </div>
+                            <input type="password" class="password" name="password" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="submit-button">LOGIN</button>
+                        <div>
+                            <p class="bottom-content">Don't have an account? <a href="/">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="superManImgDiv"><img class="superManImg" src="/static/images/superman1.svg" alt="super-image"> </img></div>
+    </div>
+    
+</body>
+</html>

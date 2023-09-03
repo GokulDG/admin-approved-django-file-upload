@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #006098;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+body .backgroundlayout {
+  display: flex;
+  flex-direction: row;
+}
+body .backgroundlayout .leftside {
+  background-color: #006098;
+  width: 42%;
+  height: 100vh;
+}
+body .backgroundlayout .rightside {
+  background-color: #2380ED;
+  width: 58%;
+  height: 100vh;
+  border-radius: 40px 0px 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .backgroundlayout .rightside .center-box {
+  width: 70%;
+  height: 75%;
+  background: rgba(255, 255, 255, 0.377);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+body .backgroundlayout .rightside .center-box .register-text {
+  font-family: "Gill Sans", "Gill Sans MT";
+  line-height: 61px;
+  letter-spacing: 0.13em;
+  font-weight: 400;
+  font-size: 2vw; /*32px*/
+  color: white;
+  margin-top: 5%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer {
+  width: 100%;
+  height: 100%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .first-name-background {
+  width: 55%;
+  height: 9%;
+  background-color: rgb(255, 13, 13);
+  border-radius: 8px;
+  display: flex;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .first-name-background .person-1 {
+  width: 15%;
+  height: 100%;
+  background-color: #006AFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .first-name-background .person-1 .person {
+  width: 60%;
+  height: 60%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .first-name-background .first-name {
+  width: 85%;
+  border-radius: 0px 8px 8px 0px;
+  padding-left: 8%;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .last-name-background {
+  width: 55%;
+  height: 9%;
+  background-color: rgb(255, 13, 13);
+  border-radius: 8px;
+  display: flex;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .last-name-background .person-1 {
+  width: 15%;
+  height: 100%;
+  background-color: #006AFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .last-name-background .person-1 .person {
+  width: 60%;
+  height: 60%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .last-name-background .last-name {
+  width: 85%;
+  border-radius: 0px 8px 8px 0px;
+  padding-left: 8%;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .username-background {
+  width: 55%;
+  height: 9%;
+  background-color: rgb(255, 13, 13);
+  border-radius: 8px;
+  display: flex;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .username-background .person-1 {
+  width: 15%;
+  height: 100%;
+  background-color: #006AFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .username-background .person-1 .person {
+  width: 60%;
+  height: 60%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .username-background .username {
+  width: 85%;
+  border-radius: 0px 8px 8px 0px;
+  padding-left: 8%;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .email-background {
+  width: 55%;
+  height: 9%;
+  background-color: rgb(255, 13, 13);
+  border-radius: 8px;
+  display: flex;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .email-background .person-1 {
+  width: 15%;
+  height: 100%;
+  background-color: #006AFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .email-background .person-1 .person {
+  width: 45%;
+  height: 45%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .email-background .email {
+  width: 85%;
+  border-radius: 0px 8px 8px 0px;
+  padding-left: 8%;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .password-background {
+  width: 55%;
+  height: 9%;
+  background-color: rgb(255, 13, 13);
+  border-radius: 8px;
+  display: flex;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .password-background .person-1 {
+  width: 15%;
+  height: 100%;
+  background-color: #006AFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .password-background .person-1 .person {
+  width: 60%;
+  height: 60%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .password-background .password {
+  width: 85%;
+  border-radius: 0px 8px 8px 0px;
+  padding-left: 8%;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .password2-background {
+  width: 55%;
+  height: 9%;
+  background-color: rgb(255, 13, 13);
+  border-radius: 8px;
+  display: flex;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .password2-background .person-1 {
+  width: 15%;
+  height: 100%;
+  background-color: #006AFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px 0px 8px;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .password2-background .person-1 .person {
+  width: 60%;
+  height: 60%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .password2-background .password2 {
+  width: 85%;
+  border-radius: 0px 8px 8px 0px;
+  padding-left: 8%;
+  font-size: 1vw;
+  border: none;
+  outline: none;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .submit-button {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.13em;
+  font-size: 1vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16%;
+  height: 8%;
+  background: #006AFF;
+  box-shadow: 0px 4px 22px rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  border: none;
+  margin-top: 3%;
+}
+body .backgroundlayout .rightside .center-box .registercontainer form .bottom-content {
+  color: #ffffff;
+  font-size: 1.1vw;
+}
+body .superManImgDiv {
+  height: 100vh;
+  width: 55%;
+  position: absolute;
+  margin-left: 2%;
+}
+body .superManImgDiv .superManImg {
+  margin: 4% 0 0 -4%;
+  max-width: 100%;
+}/*# sourceMappingURL=register.css.map */

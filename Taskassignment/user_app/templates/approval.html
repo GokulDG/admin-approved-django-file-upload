@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/approvals.css">
+    <title>Admin Approval</title>
+</head>
+<body>
+    <h1 class="login-text">ADMIN USER APPROVAL PAGE</h1>
+    <h2>UNAPPROVED USERS</h2>
+    <form method="POST">
+      {% csrf_token %}
+      <table>
+        <tr>
+          <th>USERNAME</th>
+          <th>EMAIL</th>
+        </tr>
+        {% for user in unapproved_users %}
+        <tr>
+          <td>{{ user.username }}</td>   
+          <td>{{ user.email }}</td>
+          <td><a href="/approve/{{user.id}}"><button type="button">ACCEPT</button></td></a>
+          <td><a href="/reject/{{user.id}}"><button type="button">REJECT</button></td></a>
+        </tr>
+        {% endfor %}
+      </table>
+    </form>
+    <h2>APPROVED USER</h2>
+      <table>
+        <tr>
+          <th>USERNAME</th>
+          <th>EMAIL</th>
+          <th>IMAGE</th>
+        </tr>
+        {% for users in approved_users %}
+        <tr>
+          <td>{{ users.username }}</td>   
+          <td>{{ users.email }}</td>
+          <td>{{ users.image }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    <h2>REJECTED USER</h2>
+    <table>
+        <tr>
+          <th>USERNAME</th>
+          <th>EMAIL</th>
+        </tr>
+        {% for user in reject_users %}
+        <tr>
+          <td>{{ user.username }}</td>   
+          <td>{{ user.email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div>
+      <p>Back to Login Page <a href="/login">Login</a></p>
+    </div>
+</body>
+</html>
+
+
+  
+
